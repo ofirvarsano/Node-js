@@ -11,6 +11,7 @@ const app = express();
 //app.use(bodyParser.json());
 app.use(express.json());
 
+// const uri = "mongodb+srv://ofir123:ofir123@cluster0.jji7m.mongodb.net/?retryWrites=true&w=majority";
 const uri = process.env.DB_CONNECTION;
   
 const client = new MongoClient(uri);
